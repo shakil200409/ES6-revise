@@ -34,3 +34,11 @@ const newProduct = {name: 'webCam', price: 1000, brand: 'Canon', color: 'white'}
 const newProducts = [...products, newProduct];
 // console.log(products);
 // console.log(newProducts);
+
+
+/**
+ * Creating a new array without the specific object/item 
+ * We are creating an array without phone
+ */
+const remaining = products.filter(product => product.name !== 'Phone');
+// console.log(remaining);
